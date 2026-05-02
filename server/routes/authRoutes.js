@@ -101,9 +101,11 @@ router.get("/users", authMiddleware, async (req, res) => {
         res.json(users);
 
     } catch (error) {
-        res.status(500).json({
-            msg: error.message
-        });
+       console.log(error);
+
+    res.status(500).json({
+        msg: error.message
+    });
     }
 });
 
