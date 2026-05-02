@@ -15,7 +15,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "https://team-task-manager-7s8a.onrender.com/api/dashboard/stats",
+        "https://team-task-manager-backend-762r.onrender.com/api/dashboard/stats",
         {
           headers: { Authorization: token }
         }

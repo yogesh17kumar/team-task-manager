@@ -28,7 +28,7 @@ function Projects() {
 
   const createProject = async () => {
     await axios.post(
-      "https://team-task-manager-7s8a.onrender.com/api/projects/create",
+      "https://team-task-manager-backend-762r.onrender.com/api/projects/create",
       {
         title,
         description,

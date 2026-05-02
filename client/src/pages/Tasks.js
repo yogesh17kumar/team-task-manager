@@ -25,7 +25,7 @@ function Tasks() {
   const fetchTasks = async () => {
     try {
       const res = await axios.get(
-        "https://team-task-manager-7s8a.onrender.com/api/tasks/all",
+        "https://team-task-manager-backend-762r.onrender.com/api/tasks/all",
         {
           headers: { Authorization: token }
         }
@@ -40,7 +40,7 @@ function Tasks() {
   const fetchProjects = async () => {
     try {
       const res = await axios.get(
-        "https://team-task-manager-7s8a.onrender.com/api/projects/all",
+        "https://team-task-manager-backend-762r.onrender.com/api/projects/all",
         {
           headers: { Authorization: token }
         }
@@ -55,7 +55,7 @@ function Tasks() {
   const fetchUsers = async () => {
     try {
       const res = await axios.get(
-        "https://team-task-manager-7s8a.onrender.com/api/auth/users",
+        "https://team-task-manager-backend-762r.onrender.com/api/auth/users",
         {
           headers: { Authorization: token }
         }
@@ -70,7 +70,7 @@ function Tasks() {
   const createTask = async () => {
     try {
       await axios.post(
-        "https://team-task-manager-7s8a.onrender.com/api/tasks/create",
+        "https://team-task-manager-backend-762r.onrender.com/api/tasks/create",
         {
           title,
           description,
@@ -100,7 +100,7 @@ function Tasks() {
   const updateStatus = async (id, status) => {
     try {
       await axios.put(
-        `https://team-task-manager-7s8a.onrender.com/api/tasks/update/${id}`,
+        `https://team-task-manager-backend-762r.onrender.com/api/tasks/update/${id}`,
         { status },
         {
           headers: { Authorization: token }
@@ -117,7 +117,7 @@ function Tasks() {
   const deleteTask = async (id) => {
     try {
       await axios.delete(
-        `https://team-task-manager-7s8a.onrender.com/api/tasks/delete/${id}`,
+        `https://team-task-manager-backend-762r.onrender.com/api/tasks/delete/${id}`,
         {
           headers: { Authorization: token }
         }
