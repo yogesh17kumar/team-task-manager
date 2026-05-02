@@ -244,10 +244,10 @@ Displays:
 # 🌐 Deployment
 
 ## Backend Deployment
-- Railway
+- Render
 
 ## Frontend Deployment
-- Railway / Vercel
+- Render
 
 ---
 
